@@ -1,10 +1,9 @@
 # Clothing Store POS System
 
-## Introduction
 
-<img src="ref-images/dashboard-mock.png" width="600px" height="auto">
+This project features a Point of Sale (POS) system designed to enhance transaction efficiency and product management for retail businesses. The primary objective is to deliver a solution that ensures accuracy, streamlines operations, and offers user-friendly interfaces for shop owners.
 
-In this project, I have designed a Java based POS system to streamline transactions for retail customers and effectively manage Products. The primary goal of this project was to create a solution that provides accuracy, efficiency, and ease of use for shop owners.
+
 ## Technologies Used
 
 - Java
@@ -16,4 +15,3 @@ In this project, I have designed a Java based POS system to streamline transacti
 - intellij IDEA
 - DataGrip
 
-<img src="ref-images/tech-stack.png" width="450px" height="auto"><br>
