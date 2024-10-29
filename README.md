@@ -1,22 +1,10 @@
-# CheckPoint POS System
-
-### Version
-0.1.0
-
-### License
-Copyright &copy; 2023 Shehan Rathnayake. All Rights Reserved.<br>
-This product is licensed under [MIT License](License.txt).
-
-### SRS Document
-
-[SRS Document](SRS-Document.pdf)
+# Clothing Store POS System
 
 ## Introduction
 
 <img src="ref-images/dashboard-mock.png" width="600px" height="auto">
 
-In this project, I have designed a Java based POS system to streamline transactions for retail customers and effectively manage inventory. The name I have given to this project is Checkpoint POS System. The primary goal of this project was to create a solution that provides accuracy, efficiency, and ease of use for shop owners. [see more...]()
-
+In this project, I have designed a Java based POS system to streamline transactions for retail customers and effectively manage Products. The primary goal of this project was to create a solution that provides accuracy, efficiency, and ease of use for shop owners.
 ## Technologies Used
 
 - Java
@@ -30,9 +18,6 @@ In this project, I have designed a Java based POS system to streamline transacti
 
 <img src="ref-images/tech-stack.png" width="450px" height="auto"><br>
 
-## Supported Links
-
-- [Comprehensive Project Story on Medium](https://medium.com/@shehan_rathnayake/my-experience-in-point-of-sale-system-project-af15e4cada95) 👈
 
 ## Sample Images
 
