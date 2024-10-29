@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="890.0" prefWidth="1265.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.app.controller.AdminDashboardSceneController">
+   <children>
+      <HBox alignment="CENTER_RIGHT" layoutX="1010.0" layoutY="24.0" prefHeight="75.0" prefWidth="276.0" spacing="20.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+         <children>
+            <ImageView fx:id="imgProfileImage" fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/male-avatar.jpg" />
+               </image>
+            </ImageView>
+            <VBox alignment="CENTER" prefHeight="75.0" prefWidth="145.0" spacing="2.0">
+               <children>
+                  <Label fx:id="lblUserId" prefHeight="18.0" prefWidth="145.0" text="U0001" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Label fx:id="lblUserName" prefHeight="17.0" prefWidth="152.0" text="Shehan" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+               </children>
+            </VBox>
+            <Button fx:id="btnLogout" mnemonicParsing="false" onAction="#btnLogoutOnAction" prefHeight="27.0" prefWidth="26.0" />
+         </children>
+      </HBox>
+      <Label alignment="CENTER" layoutX="21.0" layoutY="880.0" prefHeight="16.0" prefWidth="1245.0" text="
+
+
+" textAlignment="CENTER" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER_LEFT" layoutX="25.0" layoutY="48.0" prefHeight="75.0" prefWidth="564.0" spacing="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="38.0">
+         <children>
+            <ImageView fx:id="imgViewLogo" fitHeight="67.0" fitWidth="92.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/logo-no-border.png" />
+               </image>
+            </ImageView>
+            <Label text="DASHBOARD" textFill="#2d12ff">
+               <font>
+                  <Font name="System Bold Italic" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <MenuBar layoutX="6.0" layoutY="1.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Close" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Edit">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Delete" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <HBox alignment="CENTER" layoutX="15.0" layoutY="333.0" prefHeight="231.0" prefWidth="1253.0" spacing="50.0" AnchorPane.bottomAnchor="310.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="333.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="231.0" prefWidth="160.0" spacing="25.0">
+               <children>
+                  <Button fx:id="btnManageInventory" mnemonicParsing="false" onAction="#btnManageInventoryOnAction" prefHeight="150.0" prefWidth="150.0" style="-fx-border-color: #2d12ff; -fx-border-width: 3;" />
+                  <Label alignment="CENTER" text="Products" textAlignment="CENTER" textFill="#2d12ff" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="160.0" spacing="25.0">
+               <children>
+                  <Button fx:id="btnManageUsers" mnemonicParsing="false" onAction="#btnManageUsersOnAction" prefHeight="150.0" prefWidth="150.0" style="-fx-border-color: #2d12ff; -fx-border-width: 3;" />
+                  <Label alignment="CENTER" text="Users" textAlignment="CENTER" textFill="#2d12ff" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="160.0" spacing="25.0">
+               <children>
+                  <Button fx:id="btnManageCustomers" mnemonicParsing="false" onAction="#btnManageCustomersOnAction" prefHeight="150.0" prefWidth="150.0" style="-fx-border-color: #2d12ff; -fx-border-width: 3;" />
+                  <Label alignment="CENTER" text="Customers" textAlignment="CENTER" textFill="#2d12ff" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="160.0" spacing="25.0">
+               <children>
+                  <Button fx:id="btnManageOrders" mnemonicParsing="false" onAction="#btnManageOrdersOnAction" prefHeight="150.0" prefWidth="150.0" style="-fx-border-color: #2d12ff; -fx-border-width: 3;" />
+                  <Label alignment="CENTER" prefHeight="26.0" prefWidth="151.0" text="Orders" textAlignment="CENTER" textFill="#2d12ff" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
